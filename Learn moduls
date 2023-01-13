@@ -1,0 +1,34 @@
+// Task 1
+import java.util.*;
+
+public class Main {
+  
+    public static int weigh(int w1){
+      if (w1<=0){
+        System.out.println("Указан неверный вес!");
+      }
+        else if (w1<=75){
+          if (w1<=50) {
+            System.out.println("Боец супер легкой категории");
+          }
+          else{
+            System.out.println("Боец легкой категории");
+          }
+        }
+        else{
+          if (w1>=76)
+            System.out.println("Боец средней категории");
+          else if (w1>=90){
+            System.out.println("Боец тяжелой категории");
+          }
+          else{
+            System.out.println("Боец супер тяжелой категории");
+          }
+        }
+        return w1;
+    }
+    public static void main(String[] args) {
+     
+     int weigh = weigh(50);
+  }
+}
