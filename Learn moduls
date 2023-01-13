@@ -69,3 +69,31 @@ public class Main {
     salary(sc.nextInt());
   }
 }
+/* Домашняя задача 6-3
+Реализовать функцию, которая принимает на вход 2 числа n и m и возвращает n в m степени. 
+Реализовать перегрузку для разных типов данных
+*/
+
+import java.util.*;
+import java.util.Scanner;
+
+
+public class Main {
+  
+    public static int pow(int value, int powValue) {
+     int result = 1;
+     for (int i = 1; i <= powValue; i++) {
+       //System.out.println(i);
+       //System.out.println(result);
+         result = result * value;
+     }
+     return result;
+}
+    
+    
+    public static void main(String[] args) {
+      
+    System.out.println(pow(7, 4));
+
+  }
+}
